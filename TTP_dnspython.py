@@ -1,7 +1,7 @@
 import dns.resolver
 
 DOMAIN = "transitionparadigm.com"
-RESOLVERS = ["1.1.1.1", "8.8.8.8"]  # Cloudflare + Google
+RESOLVERS = ["1.1.1.1", "8.8.8.8"]  # Cloudflare & Google
 resolver = dns.resolver.Resolver(configure=True)
 resolver.nameservers = RESOLVERS
 resolver.timeout = 3.0
